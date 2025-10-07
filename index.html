@@ -12,7 +12,7 @@
   
   <!-- Core CSS (keep minimal, remove duplicates) -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-  <link rel="icon" href="./static/images/logo_v2.svg">
+  <link rel="icon" href="logo_v2.svg">
   <link href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -23,64 +23,64 @@
   <!-- Additional CSS for custom styling -->
   <style>
     .fancy-line {
-      width: 1000px;          /* 横线总长度，短一些 */
-      height: 1px;           /* 横线高度，更细 */
+      width: 1000px;         
+      height: 1px;        
       background: linear-gradient(to right, 
-                                  transparent,   /* 左端渐细 */
-                                  #1a202c 50%,   /* 中间颜色最粗 */
-                                  transparent);  /* 右端渐细 */
-      margin: 20px auto;     /* 上下间距 + 居中 */
-      border-radius: 1px;    /* 圆角，使过渡柔和 */
+                                  transparent,  
+                                  #1a202c 50%,  
+                                  transparent);  
+      margin: 20px auto;     
+      border-radius: 1px;    
     }
     .avqa-title {
       font-family: 'Montserrat', 'Arial', sans-serif;
-      font-weight: 900;       /* 大标题可用更粗 */
+      font-weight: 900;      
       font-size: 2.0rem;
       letter-spacing: -0.5px;
       color: #222222;
       margin-bottom: 18px;
-      display: inline-flex;       /* 图片和文字在同一行 */
-      align-items: center;        /* 垂直居中 */
-      justify-content: center;    /* 保持整体居中 */
-      gap: 10px;                  /* 图片和文字之间的间距 */
-      text-align: center;          /* 文本居中（可选） */
+      display: inline-flex;      
+      align-items: center;        
+      justify-content: center;   
+      gap: 10px;                 
+      text-align: center;         
     }
     .avqa-title2 {
            font-family: 'Montserrat', 'Arial', sans-serif;
-      font-weight: 900;       /* 大标题可用更粗 */
+      font-weight: 900;       
       font-size: 2.0rem;
       letter-spacing: -0.5px;
       color: #222222;
       margin-bottom: 18px;
-      display: inline-flex;       /* 图片和文字在同一行 */
-      align-items: center;        /* 垂直居中 */
-      justify-content: center;    /* 保持整体居中 */
-      gap: 10px;                  /* 图片和文字之间的间距 */
-      text-align: center;          /* 文本居中（可选） */
+      display: inline-flex;     
+      align-items: center;        
+      justify-content: center;   
+      gap: 10px;                 
+      text-align: center;       
       margin-left: 180px;
     }
     .title-logo {
-      width: 50px;   /* 调整大小 */
+      width: 50px;  
       height: 50px;
     }
     .publication-title {
       max-width: 1000px;
       width: 100%;
-      margin: 0 auto;        /* 保持居中基础 */
-      margin-left: 200px;     /* 向左偏移 20px */
+      margin: 0 auto;       
+      margin-left: 200px;    
       text-align: justify;
     }
     .content.has-text-justified {
       max-width: 1200px;
       width: 120%;
-      margin: 0 auto;        /* 保持基础居中 */
+      margin: 0 auto;      
       position: relative;
-      left: -75px;            /* 向左移动 20px */
+      left: -75px;          
       text-align: justify;
     }
     .publication-title .logo-svg {
-      margin-right: 4pt;       /* logo 与文字间距 */
-      height: 1.5em;             /* 根据标题大小调整 logo 高度 */
+      margin-right: 4pt;       
+      height: 1.5em;          
     }
    .spacevista-title {
       font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
@@ -100,14 +100,14 @@
     }
           
     .normal-title-wrapper {
-      display: inline-block;        /* 保持内联，但可以设置宽度 */
-      width: 600px;                 /* 父容器宽度，比文字本身大 */
-      position: relative;           /* 允许偏移 */
-      left: -80px;                  /* 向左移动 50px，根据需要调整 */
-      text-align: center;           /* 文字在容器内居中 */
+      display: inline-block;      
+      width: 600px;                
+      position: relative;         
+      left: -80px;                 
+      text-align: center;        
     }
     .normal-title {
-      white-space: nowrap;          /* 防止文字换行 */
+      white-space: nowrap;         
       font-size: 0.7em !important;
     }
     .unit-mmkm {
@@ -128,16 +128,14 @@
 </head>
 <body>
 
-
-<!-- 悬浮按钮 -->
 <button id="backToTop" class="back-to-top">↑</button>
 
 <style>
   .back-to-top {
     position: fixed;
-    top: 50%;                 /* 垂直居中 */
-    right: 20px;              /* 靠右边 */
-    transform: translateY(-50%); /* 精准垂直居中 */
+    top: 50%;              
+    right: 20px;         
+    transform: translateY(-50%); 
     
     width: 40px;
     height: 40px;
@@ -148,9 +146,9 @@
     background: #007bff;
     color: #fff;
     border: none;
-    border-radius: 50%;       /* 圆形按钮 */
+    border-radius: 50%;     
     cursor: pointer;
-    z-index: 999;             /* 确保在最上层 */
+    z-index: 999;         
     box-shadow: 0 2px 6px rgba(0,0,0,0.2);
     transition: background 0.3s;
   }
@@ -163,7 +161,7 @@
   document.getElementById("backToTop").addEventListener("click", () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth"   // 平滑滚动到顶部
+      behavior: "smooth"  
     });
   });
 </script>
@@ -175,7 +173,7 @@
       <div class="columns is-centered">
         <div class="column has-text-centered">
           <h1 class="title is-1 publication-title">
-            <img src="./static/images/logo_v2.png" alt="Logo" class="logo-svg">
+            <img src="logo_v2.png" alt="Logo" class="logo-svg">
             <span class="spacevista-title">SpaceVista</span><br>
             <span class="normal-title-wrapper">
               <span class="normal-title">
@@ -251,7 +249,7 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="avqa-title">Abstract</h2>
-        <img src="./static/images/teaser.jpg" alt="" style="display:block;width:100%;height:auto;margin-bottom:24px;" loading="eager" fetchpriority="high" decoding="async" />
+        <img src="teaser.jpg" alt="" style="display:block;width:100%;height:auto;margin-bottom:24px;" loading="eager" fetchpriority="high" decoding="async" />
         <div class="content has-text-justified">
         With the current surge in spatial reasoning explorations, researchers have 
         made significant progress in understanding indoor scenes, but still struggle with diverse applications such as robotics and autonomous driving. 
@@ -282,12 +280,12 @@
     <div class="columns is-centered">
       <div class="column is-four-fifths">
         <h2 class="avqa-title2">
-          <img src="./static/images/question-logo.png" alt="logo" class="title-logo">
+          <img src="question-logo.png" alt="logo" class="title-logo">
           What is SpaceVista?
         </h2>
 
         <div class="spacevista-card">
-          <img src="./static/images/intro_teaser_v3.jpg"
+          <img src="intro_teaser_v3.jpg"
            alt="data_graph"
            class="spacevista-image"
            loading="lazy" decoding="async">
@@ -401,19 +399,19 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="avqa-title">
-          <img src="./static/images/data-logo.png" alt="logo" class="title-logo">
+          <img src="data-logo.png" alt="logo" class="title-logo">
           From <span class="unit-mmkm">mm</span> to <span class="unit-mmkm">km</span> Dataset: SpaceVista-1M
         </h2>
         <div class="content has-text-justified">
           <figure class="custom-image2">
-            <img src="./static/images/data_construction_v2.jpg" alt="pipeline">
+            <img src="data_construction_v2.jpg" alt="pipeline">
           </figure>
           In constructing SpaceVista-1M dataset, we first preprocess videos and their associated information, then apply coordinate transformations and task-specific workflows for spatial reasoning. 
           For chain-of-thought annotations, fixed questions (e.g., counting, object size) are generated via over 3,000 curated templates, while flexible questions (e.g., planning) are generated using GPT-based method, 
           with randomized options provided for RL.
         </div>
         <figure class="image">
-          <img src="./static/images/data_graph_v2.jpg" alt="data_graph" style="width:600px; height:600px; object-fit:contain; display:block; margin:15px auto 20px auto;" loading="lazy" decoding="async">
+          <img src="data_graph_v2.jpg" alt="data_graph" style="width:600px; height:600px; object-fit:contain; display:block; margin:15px auto 20px auto;" loading="lazy" decoding="async">
         </figure>
         <style>
          .three-columns {
@@ -527,12 +525,12 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="avqa-title">
-          <img src="./static/images/model-logo.png" alt="logo" class="title-logo">
+          <img src="model-logo.png" alt="logo" class="title-logo">
           Model: SpaceVista-7B
         </h2>
         <div class="content has-text-justified">
           <figure class="custom-image">
-            <img src="./static/images/pipeline_v4.jpg" alt="pipeline">
+            <img src="pipeline_v4.jpg" alt="pipeline">
           </figure>
           SpaceVista-7B ingests a question with images and videos and 3D geometry, encodes them, projects features to a shared space, and fuses them in an 
           LLM through learnable interaction. A LoRA-like scale expert with a scale aware router adapts the model to different spatial scales. 
@@ -572,7 +570,7 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="avqa-title">
-          <img src="./static/images/expriment-logo.png" alt="logo" class="title-logo">
+          <img src="expriment-logo.png" alt="logo" class="title-logo">
           Experiment
         </h2>
         <style>
@@ -615,7 +613,7 @@
         
         <div class="img-text-row">
           <div class="image-container">
-            <img src="./static/images/radar.png" alt="experiment-2" loading="lazy" decoding="async">
+            <img src="radar.png" alt="experiment-2" loading="lazy" decoding="async">
           </div>
         
           <div class="text-container">
@@ -649,7 +647,7 @@
 <div id="mv-lb">
   <div class="mv-head">
     <h2 class="avqa-title">
-      <img src="./static/images/leaderboard-logo.png" alt="logo" class="title-logo">
+      <img src="leaderboard-logo.png" alt="logo" class="title-logo">
       Leaderboard on SpaceVista-Bench
     </h2>
   </div>
